@@ -72,7 +72,12 @@ class UserNotificationCrudController extends CrudController
         CRUD::addField([
             'name'        => 'marital_status',
             'type'        => 'select_from_array',
-            'options'     => ['single', 'married', 'divorced', 'widowed'],
+            'options'     => [
+                'single'   => 'single',
+                'married'  => 'married',
+                'divorced' => 'divorced',
+                'widowed'  => 'widowed',
+            ],
             'allows_null' => false,
             'default'     => 'one',
         ]);
